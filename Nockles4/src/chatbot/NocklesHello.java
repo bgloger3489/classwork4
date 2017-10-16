@@ -54,7 +54,7 @@ public class NocklesHello implements Topic{
 		else{
 			responseIndex = (int)(Math.random()* 
 					angryResponses.length);
-			NocklesMain.print(angryResponses[responseIndex]);
+			NocklesMain.print(angryResponses[responseIndex]+", "+NocklesMain.chatbot.getUserName());
 		}
 	}
 

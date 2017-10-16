@@ -9,7 +9,7 @@ public class NocklesMain {
 	static Scanner input;
 	
 	
-	static String user;
+	private String user;
 	private boolean inLoop;
 	private  String response;
 	//note: in some cases, it is more information to store as actual type
@@ -205,7 +205,9 @@ public class NocklesMain {
 
 
 
-
+	public String getUserName() {
+		return user;
+	}
 
 
 
