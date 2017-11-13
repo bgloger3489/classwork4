@@ -14,6 +14,7 @@ public class NocklesFrontEnd implements BenSupporter{
 
 	public NocklesFrontEnd() {
 		backend = new BenBackEnd(this);
+		CaveExplorer.initScanner();
 		digs = 6;
 		newHint = null;
 	}

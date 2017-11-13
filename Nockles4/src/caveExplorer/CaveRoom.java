@@ -180,14 +180,18 @@ public class CaveRoom {
 			}
 		}
 		//3. Replace default rooms with custom rooms
-		//--- WE WILL DO LATER
+		//ADD EACH PERSON'S ROOM LIKE THIS:
+		CaveRoom customRoom = new NPCRoom("Room");
+		CaveExplorer.caves[2][3] = customRoom;
+		CaveExplorer.caves[2][1] = new BenRoom("Example");
+		
+		
+		//ADD EACH PERSON'S NPC LIKE THIS:
 		CaveExplorer.npcs = new NPC[1];
 		CaveExplorer.npcs[0] = new NPC();
 		CaveExplorer.npcs[0].setposition(1, 1);
 		
-		//ADD EACH PERSON'S ROOM LIKE THIS:
-		CaveRoom customRoom = new NPCRoom("Room");
-		CaveExplorer.caves[2][3] = customRoom;
+		
 				
 
 		//4. Set your starting room:
